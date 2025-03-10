@@ -29,6 +29,7 @@
     border-bottom: 3px solid yellow;
 }
 .desktopMenuBtn{
+    cursor: pointer;
     background: white;
     color: black;
     border: none;
