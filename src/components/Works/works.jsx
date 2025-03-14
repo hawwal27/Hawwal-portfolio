@@ -19,7 +19,7 @@ const Works  = () => {
     return(
         <section id="works">
             <h2 className="worksTitle">My Portfolio</h2>
-            <span className="worksDesc">He the yes not at thy take scarce, suffice the fall few in blazon befell known, what fellow fondly any had not misery. Bacchanals begun spoiled degree paphian, aught save joyless heralds yet the few.</span>
+            <span className="worksDesc">Each project I undertake is a reflection of my dedication to innovation, problem-solving, and excellence. From concept to execution, I focus on creating impactful solutions that not only meet requirements but also exceed expectations. Whether it's web development, eCommerce, or DevOps solutions, my goal is to build projects that are efficient, user-friendly, and future-ready. Explore my work and see how I turn ideas into reality</span>
             <div className="worksImgs">
                 <img src={housing5} alt="" className="worksImg" />
                 <img src={E_commerce} alt="" className="worksImg" />
