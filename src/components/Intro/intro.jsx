@@ -13,7 +13,7 @@ const Intro = () => {
         <section id="intro">
             <div className="introContent">
                 <span className="hello">Hello</span>
-                <span className="introText">I'm <span className="introName">Hawwal</span> <br />Website Designer</span>
+                <span className="introText">I'm <span className="introName">Hawwal</span> <br />Frontend developer</span>
                 <p className="introPara">I am a skilled web designer with experience in creating <br /> visually and appealing and user friendly Website.</p>
                 <Link><button className="btn"><img src={btnimg} alt="" className="btnImg"/>Hire Me</button></Link>
             </div>
