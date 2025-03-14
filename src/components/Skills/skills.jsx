@@ -9,7 +9,7 @@ const  skills = () => {
     return(
         <section id="skills">
            <span className="skillTitle">What i do</span>
-           <span className="skillDesc">Mirth later a awake his his minstrels were when, but tales loved loved for his was disappointed childe most. Would ah  goodly shun night waste pillared revellers, ungodly revellers his his native mirth satiety.</span>
+           <span className="skillDesc">Passionate and results-driven, I bring creativity, innovation, and technical expertise to every project. With a strong foundation in web development, design, and problem-solving, I continuously seek new challenges to refine my skills and deliver impactful solutions. I thrive in dynamic environments, embracing growth and learning to stay ahead in an ever-evolving industry. Let's build something amazing together</span>
            <div className="skillBars">
             <div className="skillBar">
                 <img src={UIDesign} alt="" className="skillBarImg" />
