@@ -23,7 +23,7 @@ const Navbar =() => {
 
                <Link className="listItem" activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)}>About</Link>            
                <Link className="listItem" activeClass="active" to="intro" spy={true} smooth={true} offset={-100} duration={500} onClick={() => setShowMenu(false)}>Home</Link> 
-               <Link className="listItem" activeClass="active" to="works"  spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)}>Portfoli</Link>
+               <Link className="listItem" activeClass="active" to="works"  spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)}>Portfolio</Link>
                <Link className="listItem" activeClass="active" to="clients" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)}>Clients</Link>
                <Link className="listItem" activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500} onClick={() => setShowMenu(false)}>Contact</Link>
                </div>   

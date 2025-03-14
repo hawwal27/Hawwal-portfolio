@@ -32,7 +32,9 @@
     object-fit: cover;
     height: 20rem ;
     margin: 0.5rem;
-
+}
+.worksImg:hover{
+    border-radius: 50px;
 }
 .workBtn{
     padding: 0.5rem 2.5rem;
