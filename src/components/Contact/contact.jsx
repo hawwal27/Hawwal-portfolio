@@ -26,7 +26,7 @@ const Contact = () => {
             </div>
             <div id="contact">
                 <h1 className="contactPageTitle">Contact Me</h1>
-                <span className="contactDesc">liquyam stet erat consetetur clita duo ipsum sed, et diam.</span>
+                <span className="contactDesc">Let’s create something great together—send me a message!.</span>
                 <form className="contactForm">
                     <input type="text" className="name" placeholder="Your Name"/>
                     <input type="email" className="email" placeholder="Your Email" />
