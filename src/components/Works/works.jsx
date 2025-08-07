@@ -3,32 +3,32 @@ import "./works.css";
 
 const projects = [
   {
-    image: "https://images.unsplash.com/photo-1564869734424-d074f6e96c83", // housing UI
+    image: "https://images.unsplash.com/photo-1652926288452-911118b38c7b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // housing UI
     title: "Real Estate Platform",
     link: "https://your-housing-project.com",
   },
   {
-    image: "", // e-commerce
+    image: "https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // e-commerce
     title: "E-commerce Website",
     link: "https://your-ecommerce-site.com",
   },
   {
-    image: "https://images.unsplash.com/photo-1614850523451-1f94adf6d4a2", // clean UI
+    image: "https://images.unsplash.com/photo-1656264142377-22ae3fefdbc3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // clean UI
     title: "Landing Page Design",
     link: "https://your-landing-page.com",
   },
   {
-    image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed", // portfolio concept
+    image: "https://plus.unsplash.com/premium_photo-1728309314480-f211148f45e4?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // portfolio concept
     title: "Personal Portfolio",
     link: "https://your-portfolio.com",
   },
   {
-    image: "https://images.unsplash.com/photo-1581092918367-4c20889f1f1a", // dashboard UI
+    image: "https://images.unsplash.com/photo-1556894181-cb8e4ccca5d0?q=80&w=889&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // dashboard UI
     title: "Dashboard UI",
     link: "https://your-dashboard.com",
   },
   {
-    image: "https://images.unsplash.com/photo-1603354350317-6c2d6888fd9b", // campaign
+    image: "https://images.unsplash.com/photo-1548524238-a971a4a3b523?q=80&w=464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", // campaign
     title: "Marketing Campaign",
     link: "https://your-marketing.com",
   },
