@@ -11,6 +11,7 @@
     "react-scroll": "^1.9.2"
   },
   "scripts": {
+    "dev" : "react-scripts dev",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

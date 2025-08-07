@@ -1,33 +1,69 @@
 import React from "react";
-import "./works.css"
-// import Portfolio1 from "../../assets/portfolio-1.png"
-import Portfolio3 from "../../assets/portfolio-3.png"
-import Portfolio4 from "../../assets/portfolio-4.png"
-import Portfolio5 from "../../assets/portfolio-5.png"
-import Portfolio6 from "../../assets/portfolio-6.png"
-import housing5 from "../../assets/housing-5.png"
-import E_commerce from "../../assets/E-commerce.jpg"
+import "./works.css";
 
+const projects = [
+  {
+    image: "https://images.unsplash.com/photo-1564869734424-d074f6e96c83", // housing UI
+    title: "Real Estate Platform",
+    link: "https://your-housing-project.com",
+  },
+  {
+    image: "", // e-commerce
+    title: "E-commerce Website",
+    link: "https://your-ecommerce-site.com",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1614850523451-1f94adf6d4a2", // clean UI
+    title: "Landing Page Design",
+    link: "https://your-landing-page.com",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1615874959474-d609969a20ed", // portfolio concept
+    title: "Personal Portfolio",
+    link: "https://your-portfolio.com",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1581092918367-4c20889f1f1a", // dashboard UI
+    title: "Dashboard UI",
+    link: "https://your-dashboard.com",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1603354350317-6c2d6888fd9b", // campaign
+    title: "Marketing Campaign",
+    link: "https://your-marketing.com",
+  },
+];
 
+const Works = () => {
+  return (
+    <section id="works" className="worksSection">
+      <h2 className="worksTitle">My Portfolio</h2>
+      <p className="worksDesc">
+        I create digital experiences that are modern, intuitive, and beautifully crafted.
+        Each project reflects my commitment to functionality, creativity, and clean design.
+        Explore some of my recent work below.
+      </p>
 
-
-
-
-
-const Works  = () => {
-    return(
-        <section id="works">
-            <h2 className="worksTitle">My Portfolio</h2>
-            <span className="worksDesc">Each project I undertake is a reflection of my dedication to innovation, problem-solving, and excellence. From concept to execution, I focus on creating impactful solutions that not only meet requirements but also exceed expectations. Whether it's web development, eCommerce, or DevOps solutions, my goal is to build projects that are efficient, user-friendly, and future-ready. Explore my work and see how I turn ideas into reality</span>
-            <div className="worksImgs">
-                <img src={housing5} alt="" className="worksImg" />
-                <img src={E_commerce} alt="" className="worksImg" />
-                <img src={Portfolio3} alt="" className="worksImg" />
-                <img src={Portfolio4} alt="" className="worksImg" />
-                <img src={Portfolio5} alt="" className="worksImg" />
-                <img src={Portfolio6} alt="" className="worksImg" />
+      <div className="worksGrid">
+        {projects.map((project, index) => (
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="workCard"
+            key={index}
+          >
+            <img src={`${project.image}?auto=format&fit=crop&w=800&q=80`} alt={project.title} className="workImg" />
+            <div className="workOverlay">
+              <h3>{project.title}</h3>
             </div>
-            <button className="workBtn">See More</button>
-        </section>
-    )}
-export default Works
+          </a>
+        ))}
+      </div>
+
+      <button className="workBtn">See More</button>
+    </section>
+  );
+};
+
+export default Works;
