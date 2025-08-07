@@ -1,91 +1,105 @@
 .worksSection {
   padding: 60px 20px;
-  background: #f9f9f9;
+  background-color: #f9f9f9;
   text-align: center;
-  font-family: 'Inter', sans-serif;
 }
 
 .worksTitle {
   font-size: 2.5rem;
-  font-weight: 700;
   margin-bottom: 10px;
-  color: #222;
+  color: #555;
 }
 
 .worksDesc {
   font-size: 1.1rem;
-  color: #555;
   max-width: 700px;
   margin: 0 auto 40px;
-  line-height: 1.6;
+  color: #555;
+  line-height: 1.5;
 }
 
-.worksGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
-  padding: 0 20px;
-}
-
-.workCard {
-  position: relative;
+/* Carousel wrapper (only shows 3 at a time) */
+.carouselContainer {
+  width: 100%;
+  max-width: 960px;
   overflow: hidden;
-  border-radius: 15px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Track that moves */
+.worksTrack {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: max-content;
+}
+
+/* Cards inside the track */
+.workCard {
+  flex: 0 0 320px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
 }
 
 .workCard:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
 }
 
 .workImg {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
-}
-
-.workCard:hover .workImg {
-  transform: scale(1.05);
 }
 
 .workOverlay {
   position: absolute;
   bottom: 0;
-  background: rgba(0,0,0,0.6);
   width: 100%;
-  padding: 20px;
-  color: #fff;
-  text-align: left;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
-}
-
-.workCard:hover .workOverlay {
-  transform: translateY(0);
-}
-
-.workOverlay h3 {
-  margin: 0;
-  font-size: 1.2rem;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
 }
 
 .workBtn {
-  margin-top: 50px;
+  margin-top: 40px;
   padding: 12px 28px;
-  background: #222;
+  background-color: #333;
   color: #fff;
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
 .workBtn:hover {
-  background: #444;
-  transform: scale(1.05);
+  background-color: #555;
+}
+
+/* Responsive tweaks */
+@media (max-width: 1000px) {
+  .workCard {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .workCard {
+    flex: 0 0 100%;
+  }
+
+  .workImg {
+    height: 180px;
+  }
 }
